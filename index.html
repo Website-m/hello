@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <div class="main">
+        <center>
+            <input type="password" name="display" id="display" readonly max-length="6">
+
+            <p id="message"></p>
+        </center>
+        
+        <div class="content">
+            <div class="container-button">
+                <button type="button" onclick="appendToDisplay('1')">1</button>
+                <button type="button" onclick="appendToDisplay('2')">2</button>
+                <button type="button" onclick="appendToDisplay('3')">3</button>
+                <button type="button" onclick="appendToDisplay('4')">4</button>
+                <button type="button" onclick="appendToDisplay('5')">5</button>
+                <button type="button" onclick="appendToDisplay('6')">6</button>
+                <button type="button" onclick="appendToDisplay('7')">7</button>
+                <button type="button" onclick="appendToDisplay('8')">8</button>
+                <button type="button" onclick="appendToDisplay('9')">9</button>
+                <button type="button" onclick="clearLastChar()"><i class="fa-solid fa-delete-left"></i></button>
+                <button type="button" onclick="appendToDisplay('0')">0</button>
+                <button type="button" onclick="go()"><i class="fa-solid fa-check"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./src/script/script.js"></script>
+</body>
+</html>
